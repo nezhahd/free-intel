@@ -11,7 +11,7 @@ RUN chmod 600 $HOME/.vnc/passwd
 RUN chmod 755 $HOME/.vnc/xstartup
 RUN echo 'whoami ' >>/hdd.sh
 RUN echo 'cd ' >>/hdd.sh
-RUN echo "su -l -c 'vncserver :2000 -geometry 1440x900' "  >>/hdd.sh
+RUN echo "su -l -c 'vncserver :2000 -geometry 1900x910' "  >>/hdd.sh
 RUN echo 'cd /noVNC-1.2.0' >>/hdd.sh
 RUN echo './utils/launch.sh  --vnc localhost:7900 --listen 8900 ' >>/hdd.sh
 RUN chmod 755 /hdd.sh
